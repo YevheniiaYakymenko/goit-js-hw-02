@@ -3,14 +3,10 @@ const blackListedWord2 = 'sale';
 
 function checkForSpam(message) {
   const normalizedMessage = message.toLowerCase();
-  if (
+  return (
     normalizedMessage.includes(blackListedWord1) ||
     normalizedMessage.includes(blackListedWord2)
-  ) {
-    return true;
-  } else {
-    return false;
-  }
+  );
 }
 
 console.log(checkForSpam('Latest technology news')); // false
