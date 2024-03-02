@@ -2,10 +2,10 @@ const blackListedWord1 = 'spam';
 const blackListedWord2 = 'sale';
 
 function checkForSpam(message) {
-  const normalizeMessage = message.toLowerCase();
+  const normalizedMessage = message.toLowerCase();
   if (
-    normalizeMessage.includes(blackListedWord1) ||
-    normalizeMessage.includes(blackListedWord2)
+    normalizedMessage.includes(blackListedWord1) ||
+    normalizedMessage.includes(blackListedWord2)
   ) {
     return true;
   } else {
